@@ -1,8 +1,8 @@
-# Synopsis
+## Synopsis
 
 This custom spider routine scrapes and lists all the urls from a website given the base-url.
 
-# How to replicate my result
+### Setup
 
 1. Install Scrapy. `https://docs.scrapy.org/en/latest/intro/install.html`
 
@@ -10,9 +10,11 @@ This custom spider routine scrapes and lists all the urls from a website given t
 
 3. Go through the object (`/items.py`) and the spider (`/url_extractor/spiders/url_extractor.py`) file. It should be straight forward.
 
-4. I have scraped 3 websites and saved the respective urls into 3 seperate csvs. You can see my scrapped result data in `/output` folder.
+4. I have scraped 3 websites and saved the respective urls into 3 seperate csvs. You can find my scrapped result data in `/output` folder.
 
-5. To replicate my results, please open your terminal, go to the `url_extractor` directory and run `scrapy crawl urlextractor -o output/links_abp.csv -t csv`. You can change the csv file name at will.
+### Usage
+
+To extract the list of urls and save it to csv, please open your terminal, go to the `url_extractor` directory and run `scrapy crawl urlextractor -o output/links_abp.csv -t csv`. You can change the csv file name at will.
 
 # Known Issue
 
