@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - This spider can accept multiple comma-separated links as an argument.
 - This spider now can extract the list of URLs from multiple websites at one go.
 - Added changelog to maintain the updates.
+- Old spider code of [0.0.1] is now deprecated. You can find it [here](https://github.com/react117/url_extractor/blob/master/url_extractor/spiders/__urlextractor_depricated.py).
 
 ### Changed
 

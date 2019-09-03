@@ -18,7 +18,7 @@ This custom spider routine scrapes and lists all the urls from a website given t
 
 2. Go to the `url_extractor` directory.
 
-3. Run `scrapy crawl urlextractor -a start_urls="http://fundrazr.com/,https://www.anandabazar.com,https://www.data-blogger.com/" -o output/links_multi.csv -t csv`. By default the extracted result will be stored in `links_multi` located in the `/output` directory. You can change the csv file name  and location at will.
+3. Run `scrapy crawl urlextractor -a start_urls="http://fundrazr.com/,https://www.anandabazar.com,https://www.data-blogger.com/" -o output/links_multi.csv -t csv`. By default the extracted result will be stored in `links_multi.csv` located in the `/output` directory. You can change the csv file name  and location at will.
 
 4. This spider will accept multiple comma separated links as an argument named `start_urls`. It will then extract the list of urls from all of them at one go.
 
