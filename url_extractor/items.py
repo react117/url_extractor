@@ -4,6 +4,9 @@
 #
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
+#
+# Author: react117 
+# Email: avikbhattacharyya.2k@gmail.com
 
 import scrapy
 

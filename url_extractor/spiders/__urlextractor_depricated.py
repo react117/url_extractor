@@ -1,12 +1,7 @@
 # -*- coding: utf-8 -*-
-#
-# Author: react117
-# Email: avikbhattacharyya.2k@gmail.com
-
 from url_extractor.items import UrlExtractorItem
 from scrapy.spiders import Rule, CrawlSpider
 from scrapy.linkextractors import LinkExtractor
-from urllib.parse import urlparse
 import scrapy
 
 
@@ -14,27 +9,17 @@ class UrlextractorSpider(CrawlSpider):
     # The name of the spider
     name = "urlextractor"
 
-    # Constructor of UrlextractorSpider clas
-    def __init__(self, *args, **kwargs):
-        super(UrlextractorSpider, self).__init__(*args, **kwargs)
+    # The domains that are allowed (links to other domains are skipped)
+    # allowed_domains = ["fundrazr.com"]
+    # allowed_domains = ["data-blogger.com"]
+    allowed_domains = ["anandabazar.com"]
 
-        # Get all urls from command line argument
-        urls = kwargs.get('start_urls').split(',')
+    # The URLs to start with
+    # start_urls = ["http://fundrazr.com/"]
+    # start_urls = ["https://www.data-blogger.com/"]
+    start_urls = ["https://www.anandabazar.com"]
 
-        # The domains that are allowed (links to other domains are skipped)
-        self.start_urls = [x for x in urls]
-
-        # The URLs to start with
-        self.allowed_domains = [urlparse(x).netloc for x in urls]
-
-        # print("Allowed Domains: ")
-        # print(self.allowed_domains)
-        # print("Start Urls: ")
-        # print(self.start_urls)
-        # exit('--error')
-
-    # This spider has one rule: extract all (unique and canonicalized) links, 
-    # follow them and parse them using the parse_items method
+    # This spider has one rule: extract all (unique and canonicalized) links, follow them and parse them using the parse_items method
     rules = [
         Rule(
             LinkExtractor(

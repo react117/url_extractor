@@ -1,4 +1,4 @@
-### Synopsis
+# Url Extractor
 
 This custom spider routine scrapes and lists all the urls from a website given the base-url.
 
