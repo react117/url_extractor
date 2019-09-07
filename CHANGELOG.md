@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- The known issue of  the extractor getting into an infinite loop and resulting in duplicate urls in the csv has been fixed with a patch.
+- The known issue of the extractor getting into an infinite loop and resulting in duplicate urls in the csv has been fixed with a patch.
 
 ### Changed
 
