@@ -22,10 +22,6 @@ This custom spider routine scrapes and lists all the urls from a website given t
 
 4. This spider will accept multiple comma separated links as an argument named `start_urls`. It will then extract the list of urls from all of them at one go.
 
-### Known Issue
-
-Among the 3 sites I have tested, for 2 sites the extractor is running in an infinite loop. Means it is listing all the urls but instead of stopping there, it starts from the beginning, resulting in duplicate urls in the csv.
-
 ### Changelog
 
 Please see this [changelog](https://github.com/react117/url_extractor/blob/master/CHANGELOG.md) to know about the updates.
