@@ -6,7 +6,7 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 #
 # Author: react117 
-# Email: avikbhattacharyya.2k@gmail.com
+# Email: avikbhattacharyya.2k@gmail.com, avik@ai4bharat.org
 
 import scrapy
 
@@ -14,5 +14,7 @@ import scrapy
 class UrlExtractorItem(scrapy.Item):
     # The source URL
     url_from = scrapy.Field()
+
     # The destination URL
     url_to = scrapy.Field()
+    
